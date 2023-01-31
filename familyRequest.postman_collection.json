@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "774e1e18-920c-455b-b7e8-9b45c114f0f8",
+		"name": "familyRequest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createFamily",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"familyName\": \"Kotek\",\r\n    \"nrOfInfants\": 1,\r\n    \"nrOfChildren\": 0,\r\n    \"nrOfAdults\": 2,\r\n    \"familyMember\": [\r\n        {\r\n            \"givenName\": \"Ola\",\r\n            \"familyName\": \"Kotek\",\r\n            \"age\": 2\r\n        },\r\n        {\r\n            \"givenName\": \"Ala\",\r\n            \"familyName\": \"Kotek\",\r\n            \"age\": \"33\"\r\n        },\r\n         {\r\n            \"givenName\": \"Michał\",\r\n            \"familyName\": \"Kotek\",\r\n            \"age\": 34\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/family",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"family"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFamily",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
