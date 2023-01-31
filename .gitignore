@@ -1,0 +1,6 @@
+# Project exclude paths
+*.iml
+FamilyMemberApp/target
+FamilyApp/target
+target
+.idea
